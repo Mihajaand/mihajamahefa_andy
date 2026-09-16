@@ -3413,6 +3413,23 @@ img.u-pull-left {
     vertical-align : bottom;
 }
 
+.about-info__pic-block {
+    position : relative;
+    overflow : hidden;
+}
+
+.about-info__pic-block::after {
+    position       : absolute;
+    right          : -8%;
+    bottom         : -2rem;
+    left           : -8%;
+    height         : 24%;
+    content        : "";
+    background     : linear-gradient(to bottom, transparent 0%, var(--color-body) 72%);
+    filter         : blur(1.2rem);
+    pointer-events : none;
+}
+
 .about-info__text {
     padding     : var(--vspace-3_5) 10vw var(--vspace-2) 0;
     margin-left : -4rem;
